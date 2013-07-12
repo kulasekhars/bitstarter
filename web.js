@@ -4,8 +4,6 @@ var app = express.createServer(express.logger());
 
 var out = "message from a variable";
 
-var buf = new buffer(256);
-
 var fs = require('fs');
 
 app.get('/', function(request, response) {
