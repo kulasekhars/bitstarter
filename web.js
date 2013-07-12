@@ -10,7 +10,7 @@ var fs = require('fs');
 
 app.get('/', function(request, response) {
   buf = fs.readFileSync('index.html');
-  out = buf.toString();
+//  out = buf.toString();
   response.send(out);
 });
 
