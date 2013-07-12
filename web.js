@@ -7,7 +7,9 @@ var out = "message from a variable";
 var fs = require('fs');
 
 app.get('/', function(request, response) {
-    response.send(out);
+      var buf = new buffer(256);     
+
+      response.send(out);
 });
 
 var port = process.env.PORT || 5000;
