@@ -2,10 +2,10 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-
+var out = "message from a variable";
 
 app.get('/', function(request, response) {
-  response.send('message from kula');
+  response.send(out);
 });
 
 var port = process.env.PORT || 5000;
