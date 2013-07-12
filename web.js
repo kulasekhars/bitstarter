@@ -7,7 +7,7 @@ var out = "message from a variable";
 var fs = require('fs');
 
 app.get('/', function(request, response) {
-      var buf = new buffer(256);     
+      var buf = new Buffer(256);     
 
       response.send(out);
 });
